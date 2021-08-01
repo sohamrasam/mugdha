@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'STIX Two Text', serif;
+}
+nav{
+    background:black;
+    display: flex;
+    padding: 4;
+    height:45px;
+    width: 100%;
+    
+}
+.nav-links{
+    
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    display: inline-block;
+    padding: 5;
+    margin:0 20px;
+}
+.nav-links ul li a{
+    color:white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.nav-links ul li::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: red;
+    display:block;
+    margin: auto;
+    transition: 0.7s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    background-image: linear-gradient( 181deg,  rgba(225,109,245,1) 6.9%, rgba(78,248,231,1) 112.8% );
+}
+.logo{
+    height: 100%;
+    position: relative;
+    text-align: center;
+    padding: 175;
+
+}
+.name{
+    font-size: 35px;
+    padding: 15px;
+}
